@@ -11,6 +11,6 @@ public class CommunityApplicationTests {
 
     @Test
     public void contextLoads() {
-    }
-
+       }
 }
+
