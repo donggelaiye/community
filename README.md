@@ -18,6 +18,17 @@
  
  [VP](https://www.visual-paradigm.com)
  
- 
- create user if not exists sa password '123';
- alert user sa admin true;
+ ##脚本
+```sql
+create table user
+(
+    id           int auto_increment
+        primary key,
+    account_id   varchar(100) null,
+    name         varchar(50)  null,
+    token        char(36)     null,
+    gmt_create   bigint       null,
+    gmt_modified bigint       null
+);
+
+```
