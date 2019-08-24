@@ -17,3 +17,7 @@
  [git](https://github.com/donggelaiye/community)
  
  [VP](https://www.visual-paradigm.com)
+ 
+ 
+ create user if not exists sa password '123';
+ alert user sa admin true;
