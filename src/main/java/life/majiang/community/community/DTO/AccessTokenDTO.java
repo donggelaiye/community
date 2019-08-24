@@ -13,6 +13,17 @@ public class AccessTokenDTO {
     private String redirect_url;
     private String state;
 
+    @Override
+    public String toString() {
+        return "AccessTokenDTO{" +
+                "client_id='" + client_id + '\'' +
+                ", client_secret='" + client_secret + '\'' +
+                ", code='" + code + '\'' +
+                ", redirect_url='" + redirect_url + '\'' +
+                ", state='" + state + '\'' +
+                '}';
+    }
+
     public String getClient_id() {
         return client_id;
     }
