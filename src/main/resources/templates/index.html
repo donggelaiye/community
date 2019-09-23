@@ -2,23 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>码匠社区</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet"href="css/bootstrap.min.css">
-    <link rel="stylesheet"href="css/bootstrap-theme.min.css">
-    <script src="js/bootstrap.min.js"type="application/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js" type="application/javascript"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
 
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">码匠社区</span>
             </button>
             <a class="navbar-brand" href="#">码匠社区</a>
         </div>
-
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form class="navbar-form navbar-left">
                 <div class="form-group">
@@ -28,7 +27,9 @@
             </form>
 
             <ul class="nav navbar-nav navbar-right">
-                <div ></div>
+                <li th:if="${session.user!=null}">
+                    <a href="/publish">发布</a>
+                </li>
                 <li class="dropdown" th:if="${session.user != null}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                        aria-haspopup="true" aria-expanded="false">我 <span class="caret"></span></a>
@@ -45,19 +46,5 @@
         </div>
     </div>
 </nav>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        操作
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li role="separator" class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-    </ul>
-</div>
 </body>
 </html>

@@ -1,46 +1,17 @@
 package life.majiang.community.community.DTO;
 
+import lombok.Data;
 /**
  * @Description
  * @Author chendong <dong.chen03@ucarinc.com>
  * @Version V1.0.0
  * @Date 2019/8/23
  */
+@Data
 public class GitHubUser {
     private String name;
     private Long id;
     private String bio;
+    private String avatar_url;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
-    }
-
-    @Override
-    public String toString() {
-        return "GitHubUser{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                ", bio='" + bio + '\'' +
-                '}';
-    }
 }
