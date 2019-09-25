@@ -1,5 +1,6 @@
 package life.majiang.community.community.controller;
 
+import life.majiang.community.community.DTO.QuestionDTO;
 import life.majiang.community.community.mapper.QuestionMapper;
 import life.majiang.community.community.mapper.UserMapper;
 import life.majiang.community.community.model.Question;
@@ -42,8 +43,8 @@ public class IndexController {
                 }
             }
         }
-        List<Question> questionList=questionService.list();
-        model.addAttribute("question",questionList);
+        List<QuestionDTO> questionList=questionService.list();
+        model.addAttribute("questions",questionList);
         return "index";
     }
 }
