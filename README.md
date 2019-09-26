@@ -14,6 +14,8 @@
 [注册github APP Creating an OAuth App](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/) 
 
 [thymeleaf资料](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#reformatting-dates-in-our-home-page)
+
+[网页自动部署刷新插件](http://livereload.com/extensions/)
 ##工具
  [git](https://github.com/donggelaiye/community)
  

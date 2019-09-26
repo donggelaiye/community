@@ -43,11 +43,11 @@
             <artifactId>okhttp</artifactId>
             <version>3.14.1</version>
         </dependency>
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.59</version>
-            </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.59</version>
+        </dependency>
         <!--H2数据库的依赖-->
         <dependency>
             <groupId>com.h2database</groupId>
@@ -81,7 +81,13 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        </dependencies>
+        <!--springboot自动部署devtools-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
